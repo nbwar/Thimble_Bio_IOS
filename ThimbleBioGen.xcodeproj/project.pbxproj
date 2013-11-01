@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B2F2961823839800D5B163 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2951823839800D5B163 /* Foundation.framework */; };
+		01B2F2981823839800D5B163 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2971823839800D5B163 /* CoreGraphics.framework */; };
+		01B2F29A1823839800D5B163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2991823839800D5B163 /* UIKit.framework */; };
+		01B2F2A01823839800D5B163 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01B2F29E1823839800D5B163 /* InfoPlist.strings */; };
+		01B2F2A21823839800D5B163 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2F2A11823839800D5B163 /* main.m */; };
+		01B2F2A61823839800D5B163 /* NWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2F2A51823839800D5B163 /* NWAppDelegate.m */; };
+		01B2F2A91823839800D5B163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01B2F2A71823839800D5B163 /* Main.storyboard */; };
+		01B2F2AC1823839800D5B163 /* NWViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2F2AB1823839800D5B163 /* NWViewController.m */; };
+		01B2F2AE1823839800D5B163 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B2F2AD1823839800D5B163 /* Images.xcassets */; };
+		01B2F2B51823839800D5B163 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2B41823839800D5B163 /* XCTest.framework */; };
+		01B2F2B61823839800D5B163 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2951823839800D5B163 /* Foundation.framework */; };
+		01B2F2B71823839800D5B163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2991823839800D5B163 /* UIKit.framework */; };
+		01B2F2BF1823839800D5B163 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01B2F2BD1823839800D5B163 /* InfoPlist.strings */; };
+		01B2F2C11823839800D5B163 /* ThimbleBioGenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2F2C01823839800D5B163 /* ThimbleBioGenTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01B2F2B81823839800D5B163 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01B2F28A1823839800D5B163 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01B2F2911823839800D5B163;
+			remoteInfo = ThimbleBioGen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01B2F2921823839800D5B163 /* ThimbleBioGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThimbleBioGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B2F2951823839800D5B163 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01B2F2971823839800D5B163 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01B2F2991823839800D5B163 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01B2F29D1823839800D5B163 /* ThimbleBioGen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThimbleBioGen-Info.plist"; sourceTree = "<group>"; };
+		01B2F29F1823839800D5B163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01B2F2A11823839800D5B163 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01B2F2A31823839800D5B163 /* ThimbleBioGen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ThimbleBioGen-Prefix.pch"; sourceTree = "<group>"; };
+		01B2F2A41823839800D5B163 /* NWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWAppDelegate.h; sourceTree = "<group>"; };
+		01B2F2A51823839800D5B163 /* NWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWAppDelegate.m; sourceTree = "<group>"; };
+		01B2F2A81823839800D5B163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01B2F2AA1823839800D5B163 /* NWViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NWViewController.h; sourceTree = "<group>"; };
+		01B2F2AB1823839800D5B163 /* NWViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NWViewController.m; sourceTree = "<group>"; };
+		01B2F2AD1823839800D5B163 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		01B2F2B31823839800D5B163 /* ThimbleBioGenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThimbleBioGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01B2F2B41823839800D5B163 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		01B2F2BC1823839800D5B163 /* ThimbleBioGenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ThimbleBioGenTests-Info.plist"; sourceTree = "<group>"; };
+		01B2F2BE1823839800D5B163 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01B2F2C01823839800D5B163 /* ThimbleBioGenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThimbleBioGenTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01B2F28F1823839800D5B163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B2F2981823839800D5B163 /* CoreGraphics.framework in Frameworks */,
+				01B2F29A1823839800D5B163 /* UIKit.framework in Frameworks */,
+				01B2F2961823839800D5B163 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B2F2B01823839800D5B163 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B2F2B51823839800D5B163 /* XCTest.framework in Frameworks */,
+				01B2F2B71823839800D5B163 /* UIKit.framework in Frameworks */,
+				01B2F2B61823839800D5B163 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B2F2891823839800D5B163 = {
+			isa = PBXGroup;
+			children = (
+				01B2F29B1823839800D5B163 /* ThimbleBioGen */,
+				01B2F2BA1823839800D5B163 /* ThimbleBioGenTests */,
+				01B2F2941823839800D5B163 /* Frameworks */,
+				01B2F2931823839800D5B163 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01B2F2931823839800D5B163 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01B2F2921823839800D5B163 /* ThimbleBioGen.app */,
+				01B2F2B31823839800D5B163 /* ThimbleBioGenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01B2F2941823839800D5B163 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01B2F2951823839800D5B163 /* Foundation.framework */,
+				01B2F2971823839800D5B163 /* CoreGraphics.framework */,
+				01B2F2991823839800D5B163 /* UIKit.framework */,
+				01B2F2B41823839800D5B163 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01B2F29B1823839800D5B163 /* ThimbleBioGen */ = {
+			isa = PBXGroup;
+			children = (
+				01B2F2A41823839800D5B163 /* NWAppDelegate.h */,
+				01B2F2A51823839800D5B163 /* NWAppDelegate.m */,
+				01B2F2A71823839800D5B163 /* Main.storyboard */,
+				01B2F2AA1823839800D5B163 /* NWViewController.h */,
+				01B2F2AB1823839800D5B163 /* NWViewController.m */,
+				01B2F2AD1823839800D5B163 /* Images.xcassets */,
+				01B2F29C1823839800D5B163 /* Supporting Files */,
+			);
+			path = ThimbleBioGen;
+			sourceTree = "<group>";
+		};
+		01B2F29C1823839800D5B163 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01B2F29D1823839800D5B163 /* ThimbleBioGen-Info.plist */,
+				01B2F29E1823839800D5B163 /* InfoPlist.strings */,
+				01B2F2A11823839800D5B163 /* main.m */,
+				01B2F2A31823839800D5B163 /* ThimbleBioGen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01B2F2BA1823839800D5B163 /* ThimbleBioGenTests */ = {
+			isa = PBXGroup;
+			children = (
+				01B2F2C01823839800D5B163 /* ThimbleBioGenTests.m */,
+				01B2F2BB1823839800D5B163 /* Supporting Files */,
+			);
+			path = ThimbleBioGenTests;
+			sourceTree = "<group>";
+		};
+		01B2F2BB1823839800D5B163 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01B2F2BC1823839800D5B163 /* ThimbleBioGenTests-Info.plist */,
+				01B2F2BD1823839800D5B163 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01B2F2911823839800D5B163 /* ThimbleBioGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B2F2C41823839800D5B163 /* Build configuration list for PBXNativeTarget "ThimbleBioGen" */;
+			buildPhases = (
+				01B2F28E1823839800D5B163 /* Sources */,
+				01B2F28F1823839800D5B163 /* Frameworks */,
+				01B2F2901823839800D5B163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThimbleBioGen;
+			productName = ThimbleBioGen;
+			productReference = 01B2F2921823839800D5B163 /* ThimbleBioGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01B2F2B21823839800D5B163 /* ThimbleBioGenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01B2F2C71823839800D5B163 /* Build configuration list for PBXNativeTarget "ThimbleBioGenTests" */;
+			buildPhases = (
+				01B2F2AF1823839800D5B163 /* Sources */,
+				01B2F2B01823839800D5B163 /* Frameworks */,
+				01B2F2B11823839800D5B163 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01B2F2B91823839800D5B163 /* PBXTargetDependency */,
+			);
+			name = ThimbleBioGenTests;
+			productName = ThimbleBioGenTests;
+			productReference = 01B2F2B31823839800D5B163 /* ThimbleBioGenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01B2F28A1823839800D5B163 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NW;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Nicholas Wargnier";
+				TargetAttributes = {
+					01B2F2B21823839800D5B163 = {
+						TestTargetID = 01B2F2911823839800D5B163;
+					};
+				};
+			};
+			buildConfigurationList = 01B2F28D1823839800D5B163 /* Build configuration list for PBXProject "ThimbleBioGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01B2F2891823839800D5B163;
+			productRefGroup = 01B2F2931823839800D5B163 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01B2F2911823839800D5B163 /* ThimbleBioGen */,
+				01B2F2B21823839800D5B163 /* ThimbleBioGenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01B2F2901823839800D5B163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B2F2AE1823839800D5B163 /* Images.xcassets in Resources */,
+				01B2F2A01823839800D5B163 /* InfoPlist.strings in Resources */,
+				01B2F2A91823839800D5B163 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B2F2B11823839800D5B163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B2F2BF1823839800D5B163 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01B2F28E1823839800D5B163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B2F2AC1823839800D5B163 /* NWViewController.m in Sources */,
+				01B2F2A21823839800D5B163 /* main.m in Sources */,
+				01B2F2A61823839800D5B163 /* NWAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01B2F2AF1823839800D5B163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01B2F2C11823839800D5B163 /* ThimbleBioGenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01B2F2B91823839800D5B163 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01B2F2911823839800D5B163 /* ThimbleBioGen */;
+			targetProxy = 01B2F2B81823839800D5B163 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		01B2F29E1823839800D5B163 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B2F29F1823839800D5B163 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		01B2F2A71823839800D5B163 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B2F2A81823839800D5B163 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		01B2F2BD1823839800D5B163 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01B2F2BE1823839800D5B163 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01B2F2C21823839800D5B163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01B2F2C31823839800D5B163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01B2F2C51823839800D5B163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThimbleBioGen/ThimbleBioGen-Prefix.pch";
+				INFOPLIST_FILE = "ThimbleBioGen/ThimbleBioGen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01B2F2C61823839800D5B163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThimbleBioGen/ThimbleBioGen-Prefix.pch";
+				INFOPLIST_FILE = "ThimbleBioGen/ThimbleBioGen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		01B2F2C81823839800D5B163 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThimbleBioGen.app/ThimbleBioGen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThimbleBioGen/ThimbleBioGen-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ThimbleBioGenTests/ThimbleBioGenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		01B2F2C91823839800D5B163 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ThimbleBioGen.app/ThimbleBioGen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ThimbleBioGen/ThimbleBioGen-Prefix.pch";
+				INFOPLIST_FILE = "ThimbleBioGenTests/ThimbleBioGenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01B2F28D1823839800D5B163 /* Build configuration list for PBXProject "ThimbleBioGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B2F2C21823839800D5B163 /* Debug */,
+				01B2F2C31823839800D5B163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01B2F2C41823839800D5B163 /* Build configuration list for PBXNativeTarget "ThimbleBioGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B2F2C51823839800D5B163 /* Debug */,
+				01B2F2C61823839800D5B163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		01B2F2C71823839800D5B163 /* Build configuration list for PBXNativeTarget "ThimbleBioGenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01B2F2C81823839800D5B163 /* Debug */,
+				01B2F2C91823839800D5B163 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01B2F28A1823839800D5B163 /* Project object */;
+}
