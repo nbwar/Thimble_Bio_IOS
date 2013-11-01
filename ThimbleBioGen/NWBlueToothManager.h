@@ -7,8 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreBluetooth/CoreBluetooth.h>
 
-@interface NWBlueToothManager : NSObject
+@interface NWBlueToothManager : NSObject < CBCentralManagerDelegate >
+
+@property (strong,nonatomic) CBCentralManager *manager;
+@property (strong, nonatomic) NSMutableArray *devices;
+
+
+-(void)startScanningForDevices;
 
 +(id)sharedInstance;
 
