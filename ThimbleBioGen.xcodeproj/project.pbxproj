@@ -22,6 +22,7 @@
 		01B2F2BF1823839800D5B163 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01B2F2BD1823839800D5B163 /* InfoPlist.strings */; };
 		01B2F2C11823839800D5B163 /* ThimbleBioGenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B2F2C01823839800D5B163 /* ThimbleBioGenTests.m */; };
 		01B59BB7182455F200B38FAD /* NWDeviceLocatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B59BB6182455F200B38FAD /* NWDeviceLocatorViewController.m */; };
+		01B59BBA18246BD000B38FAD /* NWBlueToothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B59BB918246BD000B38FAD /* NWBlueToothManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		01B2F2C01823839800D5B163 /* ThimbleBioGenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThimbleBioGenTests.m; sourceTree = "<group>"; };
 		01B59BB5182455F200B38FAD /* NWDeviceLocatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWDeviceLocatorViewController.h; sourceTree = "<group>"; };
 		01B59BB6182455F200B38FAD /* NWDeviceLocatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWDeviceLocatorViewController.m; sourceTree = "<group>"; };
+		01B59BB818246BD000B38FAD /* NWBlueToothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWBlueToothManager.h; sourceTree = "<group>"; };
+		01B59BB918246BD000B38FAD /* NWBlueToothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWBlueToothManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				01B59BB6182455F200B38FAD /* NWDeviceLocatorViewController.m */,
 				01B2F2AA1823839800D5B163 /* NWViewController.h */,
 				01B2F2AB1823839800D5B163 /* NWViewController.m */,
+				01B59BB818246BD000B38FAD /* NWBlueToothManager.h */,
+				01B59BB918246BD000B38FAD /* NWBlueToothManager.m */,
 				01B2F2AD1823839800D5B163 /* Images.xcassets */,
 				01B2F29C1823839800D5B163 /* Supporting Files */,
 			);
@@ -259,6 +264,7 @@
 				01B2F2A21823839800D5B163 /* main.m in Sources */,
 				01B59BB7182455F200B38FAD /* NWDeviceLocatorViewController.m in Sources */,
 				01B2F2A61823839800D5B163 /* NWAppDelegate.m in Sources */,
+				01B59BBA18246BD000B38FAD /* NWBlueToothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
