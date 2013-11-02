@@ -24,6 +24,7 @@
 -(id)init
 {
     self = [super init];
+    NSLog(@"Init");
     if (self) {
         self.manager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
         self.devices = [[NSMutableArray alloc] init];
@@ -34,14 +35,31 @@
 #pragma mark - Instance methods
 -(void)startScanningForDevices
 {
-    
+    [self.manager scanForPeripheralsWithServices:nil options:nil];
 }
 
 
 #pragma mark - CBCentralMangerDelegate
 
--(void)centralManagerDidUpdateState:(CBCentralManager *)central
-{
+//////////////////////////////////////////////////////////
+//////////////// CBCentralManagerDelegate ////////////////
+//////////////////////////////////////////////////////////
 
+ -(void)centralManagerDidUpdateState:(CBCentralManager *)central
+{
+    if (central.state != CBCentralManagerStatePoweredOn) {
+        UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"BLE not supported !" message:[NSString stringWithFormat:@"CoreBluetooth return state: %d",central.state] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [alertView show];
+    } else {
+        [central scanForPeripheralsWithServices:nil options:nil];
+    }
+        
 }
+
+//////////////////////////////////////////////////////////
+////////////////// CBPeriheralDelegate ///////////////////
+//////////////////////////////////////////////////////////
+
+
+
 @end

@@ -11,6 +11,7 @@
 @interface NWDeviceLocatorViewController ()
 
 @property (strong, nonatomic) NSMutableArray *peripherals;
+@property (nonatomic) BOOL isScanning;
 @end
 
 @implementation NWDeviceLocatorViewController
@@ -131,8 +132,28 @@
 
  */
 
+#pragma mark - IBActions
+
+//////////////////////////////////////////////////////////
+////////////////////// IBActions /////////////////////////
+//////////////////////////////////////////////////////////
+
 - (IBAction)backButtonPressed:(UIBarButtonItem *)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)didToggleScanSwitch:(UISwitch *)sender
+{
+
+    if ([sender isOn]) {
+        NSLog(@"YES");
+        self.isScanning = YES;
+    } else {
+        self.isScanning = NO;
+        NSLog(@"NO");
+    }
+    
+}
+
 @end
