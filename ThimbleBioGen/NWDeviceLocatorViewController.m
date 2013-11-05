@@ -70,18 +70,17 @@
 -(void)foundPeripheral:(NSNotification *)notification
 {
     if([[notification name] isEqualToString:@"foundPeripheral"]) {
-        NSLog(@"Peripheral found called via notification center %@", notification.object);
-        [self.peripherals addObject:notification.object];
-        [self.tableView reloadData];
+        if (![self.peripherals containsObject:notification.object]) {
+            [self.peripherals addObject:notification.object];
+            [self.tableView reloadData];
+        }
     }
-    
-    
 }
 
 -(void)connectedToPeripheral:(NSNotification *)notification
 {
     if ([[notification name] isEqualToString:@"connectedToPeripheral"]) {
-        NSLog(@"Connected to peripheral via notification center");
+        
         [self.tableView reloadData];
     }
 }
@@ -155,14 +154,16 @@
 }
 
 
-#pragma mark - IBActions
 
+#pragma mark - IBActions
 //////////////////////////////////////////////////////////
 ////////////////////// IBActions /////////////////////////
 //////////////////////////////////////////////////////////
 
 - (IBAction)backButtonPressed:(UIBarButtonItem *)sender
 {
+    self.isScanning = NO;
+    [[NWBlueToothManager sharedInstance] stopScanningForDevices];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -179,5 +180,13 @@
     }
     [self.tableView reloadData];
 }
+
+
+#pragma mark - Helper Methods
+//////////////////////////////////////////////////////////
+//////////////////// Helper Methods //////////////////////
+//////////////////////////////////////////////////////////
+
+
 
 @end
