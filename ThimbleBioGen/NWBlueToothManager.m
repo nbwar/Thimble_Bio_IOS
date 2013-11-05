@@ -38,6 +38,11 @@
     [self.manager scanForPeripheralsWithServices:nil options:nil];
 }
 
+-(void)stopScaningForDevices
+{
+    [self.manager stopScan];
+}
+
 
 #pragma mark - CBCentralMangerDelegate
 
@@ -47,6 +52,7 @@
 
  -(void)centralManagerDidUpdateState:(CBCentralManager *)central
 {
+    NSLog(@"Did Update State");
     if (central.state != CBCentralManagerStatePoweredOn) {
         UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"BLE not supported !" message:[NSString stringWithFormat:@"CoreBluetooth return state: %d",central.state] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
@@ -56,9 +62,22 @@
         
 }
 
+-(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
+{
+    NSLog(@"Found a BLE Device : %@",peripheral);
+    peripheral.delegate = self;
+    
+    [self.devices addObject:peripheral];
+    
+}
+
 //////////////////////////////////////////////////////////
 ////////////////// CBPeriheralDelegate ///////////////////
 //////////////////////////////////////////////////////////
+-(void)peripheral:(CBPeripheral *)peripheral didDiscoverServices:(NSError *)error
+{
+    
+}
 
 
 

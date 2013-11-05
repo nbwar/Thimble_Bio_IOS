@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
-@interface NWBlueToothManager : NSObject < CBCentralManagerDelegate >
+@interface NWBlueToothManager : NSObject < CBCentralManagerDelegate, CBPeripheralDelegate>
 
+@property (strong, nonatomic) CBPeripheral *connectedPeripheral;
 @property (strong,nonatomic) CBCentralManager *manager;
 @property (strong, nonatomic) NSMutableArray *devices;
 

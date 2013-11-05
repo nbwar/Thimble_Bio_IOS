@@ -10,9 +10,12 @@
 
 @interface NWDeviceLocatorViewController : UITableViewController
 
-- (IBAction)backButtonPressed:(UIBarButtonItem *)sender;
 
+
+
+- (IBAction)backButtonPressed:(UIBarButtonItem *)sender;
 - (IBAction)didToggleScanSwitch:(UISwitch *)sender;
+
 
 
 @end

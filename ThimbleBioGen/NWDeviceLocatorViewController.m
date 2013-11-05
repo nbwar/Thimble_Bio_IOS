@@ -7,6 +7,7 @@
 //
 
 #import "NWDeviceLocatorViewController.h"
+#import "NWBlueToothManager.h"
 
 @interface NWDeviceLocatorViewController ()
 
@@ -147,8 +148,8 @@
 {
 
     if ([sender isOn]) {
-        NSLog(@"YES");
         self.isScanning = YES;
+        [[NWBlueToothManager sharedInstance] startScanningForDevices];
     } else {
         self.isScanning = NO;
         NSLog(@"NO");
