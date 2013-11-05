@@ -49,12 +49,15 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(foundPeripheral:) name:@"foundPeripheral" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectedToPeripheral:) name:@"connectedToPeripheral" object:nil];
+    
+    if ([[NWBlueToothManager sharedInstance] connectedPeripheral]) {
+        [self.peripherals addObject:[[NWBlueToothManager sharedInstance] connectedPeripheral]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
@@ -120,6 +123,7 @@
 
     } else {
         static NSString *CellIdentifier = @"PeripheralCell";
+        
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
         CBPeripheral *peripheral = [self.peripherals objectAtIndex:indexPath.row];
         cell.nameLabel.text = peripheral.name;
