@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01556FF318299461002F5829 /* NWPeripheralCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01556FF218299461002F5829 /* NWPeripheralCell.m */; };
 		01B2F2961823839800D5B163 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2951823839800D5B163 /* Foundation.framework */; };
 		01B2F2981823839800D5B163 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2971823839800D5B163 /* CoreGraphics.framework */; };
 		01B2F29A1823839800D5B163 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01B2F2991823839800D5B163 /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01556FF118299461002F5829 /* NWPeripheralCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NWPeripheralCell.h; sourceTree = "<group>"; };
+		01556FF218299461002F5829 /* NWPeripheralCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NWPeripheralCell.m; sourceTree = "<group>"; };
 		01B2F2921823839800D5B163 /* ThimbleBioGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThimbleBioGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01B2F2951823839800D5B163 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		01B2F2971823839800D5B163 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,8 @@
 				01B2F2A71823839800D5B163 /* Main.storyboard */,
 				01B59BB5182455F200B38FAD /* NWDeviceLocatorViewController.h */,
 				01B59BB6182455F200B38FAD /* NWDeviceLocatorViewController.m */,
+				01556FF118299461002F5829 /* NWPeripheralCell.h */,
+				01556FF218299461002F5829 /* NWPeripheralCell.m */,
 				01B2F2AA1823839800D5B163 /* NWViewController.h */,
 				01B2F2AB1823839800D5B163 /* NWViewController.m */,
 				01BA732718298C4E00248983 /* Model */,
@@ -272,6 +277,7 @@
 				01B2F2A21823839800D5B163 /* main.m in Sources */,
 				01B59BB7182455F200B38FAD /* NWDeviceLocatorViewController.m in Sources */,
 				01B2F2A61823839800D5B163 /* NWAppDelegate.m in Sources */,
+				01556FF318299461002F5829 /* NWPeripheralCell.m in Sources */,
 				01B59BBA18246BD000B38FAD /* NWBlueToothManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

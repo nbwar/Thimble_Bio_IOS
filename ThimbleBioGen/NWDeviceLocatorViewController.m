@@ -8,6 +8,7 @@
 
 #import "NWDeviceLocatorViewController.h"
 #import "NWBlueToothManager.h"
+#import "NWPeripheralCell.h"
 
 @interface NWDeviceLocatorViewController ()
 
@@ -81,12 +82,21 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = nil;
+
+    NWPeripheralCell *cell = nil;
     if (indexPath.section == 0) {
         cell = [self.tableView dequeueReusableCellWithIdentifier:@"ScanCell" forIndexPath:indexPath];
+        
+        if (self.isScanning == YES) {
+            NSLog(@"SHOULD BE SPINNING");
+            [cell.activityIndicatorView startAnimating];
+        }
+
     } else {
-        static NSString *CellIdentifier = @"Cell";
+        static NSString *CellIdentifier = @"PeripheralCell";
         cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        CBPeripheral *peripheral = [self.peripherals objectAtIndex:indexPath.row];
+        cell.nameLabel.text = peripheral.name;
     }
     
     // Configure the cell...
@@ -108,17 +118,16 @@
 
 - (IBAction)didToggleScanSwitch:(UISwitch *)sender
 {
-
-    if ([sender isOn]) {
+    UISwitch *scanSwitch = sender;
+    if (scanSwitch.on == YES) {
         self.isScanning = YES;
         [[NWBlueToothManager sharedInstance] startScanningForDevices];
 
     } else {
         self.isScanning = NO;
         [[NWBlueToothManager sharedInstance] stopScanningForDevices];
-        NSLog(@"NO");
     }
-    
+    [self.tableView reloadData];
 }
 
 @end
