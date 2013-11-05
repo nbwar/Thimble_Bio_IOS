@@ -15,10 +15,12 @@
 @property (strong,nonatomic) CBCentralManager *manager;
 @property (strong, nonatomic) NSMutableArray *devices;
 
++(id)sharedInstance;
 
 -(void)startScanningForDevices;
 -(void)stopScanningForDevices;
+-(void)connectToPeripheral:(CBPeripheral *)peripheral;
 
-+(id)sharedInstance;
+
 
 @end

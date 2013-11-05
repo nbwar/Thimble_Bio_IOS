@@ -32,6 +32,9 @@
 }
 
 #pragma mark - Instance methods
+//////////////////////////////////////////////////////////
+////////////////// Instance Methods //////////////////////
+//////////////////////////////////////////////////////////
 -(void)startScanningForDevices
 {
     [self.manager scanForPeripheralsWithServices:nil options:nil];
@@ -42,6 +45,10 @@
     [self.manager stopScan];
 }
 
+-(void)connectToPeripheral:(CBPeripheral *)peripheral
+{
+    [self.manager connectPeripheral:peripheral options:nil];
+}
 
 #pragma mark - CBCentralMangerDelegate
 
@@ -70,10 +77,17 @@
         peripheral.delegate = self;
         
         [self.devices addObject:peripheral];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"foundPeripheral" object:self];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"foundPeripheral" object:peripheral];
     }
     
     
+}
+
+-(void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"connectedToPeripheral" object:peripheral];
+    self.connectedPeripheral = peripheral;
+    NSLog(@"Connected to peripheral");
 }
 
 //////////////////////////////////////////////////////////
