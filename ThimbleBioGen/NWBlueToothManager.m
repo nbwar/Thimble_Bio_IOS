@@ -24,7 +24,6 @@
 -(id)init
 {
     self = [super init];
-    NSLog(@"Init");
     if (self) {
         self.manager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
         self.devices = [[NSMutableArray alloc] init];
@@ -38,7 +37,7 @@
     [self.manager scanForPeripheralsWithServices:nil options:nil];
 }
 
--(void)stopScaningForDevices
+-(void)stopScanningForDevices
 {
     [self.manager stopScan];
 }
@@ -59,15 +58,21 @@
     } else {
         [central scanForPeripheralsWithServices:nil options:nil];
     }
+    
+
         
 }
 
 -(void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
-    NSLog(@"Found a BLE Device : %@",peripheral);
-    peripheral.delegate = self;
+    if (![self.devices containsObject:peripheral]) {
+        NSLog(@"Found a BLE Device : %@",peripheral);
+        peripheral.delegate = self;
+        
+        [self.devices addObject:peripheral];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"foundPeripheral" object:self];
+    }
     
-    [self.devices addObject:peripheral];
     
 }
 

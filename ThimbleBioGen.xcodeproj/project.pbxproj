@@ -125,8 +125,7 @@
 				01B59BB6182455F200B38FAD /* NWDeviceLocatorViewController.m */,
 				01B2F2AA1823839800D5B163 /* NWViewController.h */,
 				01B2F2AB1823839800D5B163 /* NWViewController.m */,
-				01B59BB818246BD000B38FAD /* NWBlueToothManager.h */,
-				01B59BB918246BD000B38FAD /* NWBlueToothManager.m */,
+				01BA732718298C4E00248983 /* Model */,
 				01B2F2AD1823839800D5B163 /* Images.xcassets */,
 				01B2F29C1823839800D5B163 /* Supporting Files */,
 			);
@@ -160,6 +159,15 @@
 				01B2F2BD1823839800D5B163 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01BA732718298C4E00248983 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01B59BB818246BD000B38FAD /* NWBlueToothManager.h */,
+				01B59BB918246BD000B38FAD /* NWBlueToothManager.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

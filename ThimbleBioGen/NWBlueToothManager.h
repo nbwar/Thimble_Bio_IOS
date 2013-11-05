@@ -17,6 +17,7 @@
 
 
 -(void)startScanningForDevices;
+-(void)stopScanningForDevices;
 
 +(id)sharedInstance;
 
